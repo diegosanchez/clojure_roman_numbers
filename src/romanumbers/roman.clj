@@ -12,9 +12,13 @@
   [x]
   (str (first x) x))
 
+(defn prev-symbol
+  [x]
+  (one))
+
 (defn decc
   [x]
-  (str (one) x))
+  (str (prev-symbol x) x))
 
 (defn convert
   [x]
