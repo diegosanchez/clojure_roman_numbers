@@ -15,3 +15,9 @@
      (= "II"
         (convert 2)))))
 
+(deftest convert-number-3-to-III
+  (testing "3 -> III"
+    (is
+     (= "III"
+        (convert 3)))))
+
