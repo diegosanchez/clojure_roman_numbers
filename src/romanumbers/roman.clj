@@ -2,4 +2,5 @@
 
 (defn convert
   [x]
-  "I")
+  (cond (= x 1) "I"
+        (= x 2) "II"))

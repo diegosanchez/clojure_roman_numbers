@@ -1,15 +1,17 @@
+
 (ns romanumbers.roman-test
   (:require [clojure.test :refer :all]
             [romanumbers.roman :refer :all]))
 
-(deftest convert_number_1_to_I
+(deftest convert-number-1-to-I
   (testing "1 -> I"
     (is
      (= "I"
         (convert 1)))))
 
-(deftest convert_number_2_to_II
-  (testing "1 -> I"
+(deftest convert-number-2-to-II
+  (testing "2 -> II"
     (is
      (= "II"
         (convert 2)))))
+
