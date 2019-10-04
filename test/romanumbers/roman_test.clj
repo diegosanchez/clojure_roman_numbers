@@ -21,3 +21,16 @@
      (= "III"
         (convert 3)))))
 
+(deftest convert-number-4-to-IV
+  (testing "4 -> IV"
+    (is
+     (= "IV"
+        (convert 4)))))
+
+
+(deftest convert-number-5-to-V
+  (testing "5 -> V"
+    (is
+     (= "V"
+        (convert 5)))))
+
