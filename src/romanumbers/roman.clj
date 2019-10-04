@@ -10,7 +10,7 @@
 
 (defn succ
   [x]
-  (str x (one)))
+  (str (first x) x))
 
 (defn decc
   [x]
