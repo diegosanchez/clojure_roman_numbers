@@ -8,13 +8,17 @@
   []
   "V")
 
-(defn succ
-  [x]
-  (str (first x) x))
-
 (defn prev-symbol
   [x]
   (one))
+
+(defn next-symbol
+  [x]
+  (one))
+
+(defn succ
+  [x]
+  (str x (next-symbol x)))
 
 (defn decc
   [x]
@@ -26,4 +30,8 @@
         (= x 2) (succ (one))
         (= x 3) (succ (succ (one)))
         (= x 4) (decc (five))
-        (= x 5) (five)))
+        (= x 5) (five)
+        (= x 6) (succ (five))
+        (= x 7) (succ (succ (five)))
+        (= x 8) (succ (succ (succ (five))))
+        ))

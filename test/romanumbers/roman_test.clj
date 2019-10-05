@@ -34,3 +34,21 @@
      (= "V"
         (convert 5)))))
 
+(deftest convert-number-6-to-VI
+  (testing "6 -> VI"
+    (is
+     (= "VI"
+        (convert 6)))))
+
+(deftest convert-number-7-to-VII
+  (testing "7 -> VII"
+    (is
+     (= "VII"
+        (convert 7)))))
+
+(deftest convert-number-8-to-VIII
+  (testing "8 -> VIII"
+    (is
+     (= "VIII"
+        (convert 8)))))
+
