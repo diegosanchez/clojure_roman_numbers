@@ -51,4 +51,3 @@
     (is
      (= "VIII"
         (convert 8)))))
-
