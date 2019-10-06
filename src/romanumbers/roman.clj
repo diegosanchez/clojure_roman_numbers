@@ -8,6 +8,10 @@
   []
   "V")
 
+(defn ten
+  []
+  "X")
+
 (defn prev-symbol
   [x]
   (one))
@@ -34,4 +38,5 @@
         (= x 6) (succ (five))
         (= x 7) (succ (succ (five)))
         (= x 8) (succ (succ (succ (five))))
+        (= x 9) (decc (ten))
         ))

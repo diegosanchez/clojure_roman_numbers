@@ -51,3 +51,9 @@
     (is
      (= "VIII"
         (convert 8)))))
+
+(deftest convert-number-9-to-IX
+  (testing "9 -> IX"
+    (is
+     (= "IX"
+        (convert 9)))))
