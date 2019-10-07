@@ -1,3 +1,4 @@
+
 (ns romanumbers.roman)
 
 (defn one
@@ -27,11 +28,6 @@
         (= x "VIII") (str (one) (ten))
         :else (str x (next-symbol x))
         ))
-
-
-(defn decc
-  [x]
-  (str (prev-symbol x) x))
 
 (defn convert
   [x]
