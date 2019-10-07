@@ -27,7 +27,6 @@
      (= "IV"
         (convert 4)))))
 
-
 (deftest convert-number-5-to-V
   (testing "5 -> V"
     (is
