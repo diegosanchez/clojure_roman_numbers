@@ -22,7 +22,12 @@
 
 (defn succ
   [x]
-  (str x (next-symbol x)))
+  (cond (= x "III") (str (one) (five))
+        (= x "IV") (five)
+        (= x "VIII") (str (one) (ten))
+        :else (str x (next-symbol x))
+        ))
+
 
 (defn decc
   [x]
@@ -31,12 +36,12 @@
 (defn convert
   [x]
   (cond (= x 1) (one)
-        (= x 2) (succ (one))
-        (= x 3) (succ (succ (one)))
-        (= x 4) (decc (five))
-        (= x 5) (five)
-        (= x 6) (succ (five))
-        (= x 7) (succ (succ (five)))
-        (= x 8) (succ (succ (succ (five))))
-        (= x 9) (decc (ten))
+        (= x 2) (succ(one))
+        (= x 3) (succ(succ (one)))
+        (= x 4) (succ(succ(succ(one))))
+        (= x 5) (succ(succ(succ(succ(one)))))
+        (= x 6) (succ(succ(succ(succ(succ(one))))))
+        (= x 7) (succ(succ(succ(succ(succ(succ(one)))))))
+        (= x 8) (succ(succ(succ(succ(succ(succ(succ(one))))))))
+        (= x 9) (succ(succ(succ(succ(succ (succ(succ(succ(one)))))))))
         ))
