@@ -56,3 +56,21 @@
     (is
      (= "IX"
         (convert 9)))))
+
+(deftest convert-number-10-to-X
+  (testing "10 -> X"
+    (is
+     (= "X"
+        (convert 10)))))
+
+(deftest convert-number-11-to-XI
+  (testing "11 -> XI"
+    (is
+     (= "XI"
+        (convert 11)))))
+
+;; (deftest convert-number-14-to-XIV
+;;   (testing "14 -> XIV"
+;;     (is
+;;      (= "XIV"
+;;         (convert 11)))))

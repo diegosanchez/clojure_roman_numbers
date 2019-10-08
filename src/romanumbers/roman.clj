@@ -10,6 +10,7 @@
                "III" "IV"
                "IV" "V"
                "VIII" "IX"
+               "IX" "X"
                })
   (cond (= (get nextOf x nil) nil) (str x (one))
         :else (get nextOf x)))
